@@ -1,0 +1,84 @@
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.small-screen {
+    display: flex;
+}
+
+.modal-content {
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    height: 90%;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: auto;
+    color: white;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-image {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.modal-device-name {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.modal-song-title, .modal-artist-name {
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: left;
+    width: 100%;
+    color:#646464;
+}
+
+@media (min-width: 769px) {
+    .modal-overlay {
+        display: none;
+    }
+}
+
+.below-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.below-icons svg {
+    font-size: 24px;
+}
